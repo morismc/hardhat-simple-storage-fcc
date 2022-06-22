@@ -1,6 +1,7 @@
 // I'm a comment!
 // SPDX-License-Identifier: MIT
 
+// Version muss der aus hardhat.config.js entsprechen
 pragma solidity 0.8.8;
 
 // pragma solidity ^0.8.0;

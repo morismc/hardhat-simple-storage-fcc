@@ -1,5 +1,5 @@
 {
-  "name": "hardhat-project",
+  "name": "hardhat-simple-storage-fcc",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.4",
     "@nomiclabs/hardhat-etherscan": "^3.0.0",
@@ -7,16 +7,23 @@
     "chai": "^4.3.4",
     "ethereum-waffle": "^3.4.0",
     "ethers": "^5.5.3",
-    "hardhat": "^2.8.3",
-    "hardhat-gas-reporter": "^1.0.7",
-    "solidity-coverage": "^0.7.18"
+    "hardhat": "^2.9.9",
+    "hardhat-gas-reporter": "^1.0.8",
+    "prettier": "^2.7.1",
+    "solidity-coverage": "^0.7.21"
   },
   "dependencies": {
+    "account": "^1.0.0",
+    "accounts": "^0.2.1",
     "dotenv": "^14.2.0",
     "prettier-plugin-solidity": "^1.0.0-beta.19"
   },
   "scripts": {
     "lint": "yarn prettier --check .",
     "lint:fix": "yarn prettier --write ."
-  }
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/PatrickAlphaC/hardhat-simple-storage-fcc",
+  "license": "MIT"
 }

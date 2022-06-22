@@ -1,5 +1,7 @@
 # Hardhat Simple Storage
 
+Aufruf von Hardhat: yarn hardhat KOMMANDO
+
 This is a section of the Javascript Blockchain/Smart Contract FreeCodeCamp Course.
 
 *[⌨️ (08:20:17) Lesson 6: Hardhat Simple Storage](https://www.youtube.com/watch?v=gyMwXuJrbJQ&t=30017s)*

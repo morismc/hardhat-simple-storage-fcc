@@ -1,23 +1,28 @@
-const { ethers } = require("hardhat")
-const { expect, assert } = require("chai")
+const { ethers } = require("hardhat") // Für alles was den SC angeht
+const { expect, assert } = require("chai") // für Assert und Expect
 
+// Aufruf via yarn hardhat test
+// oder yarn hardhat test --grep "...."
+
+// Kommt von Mocha.js
 // describe("SimpleStorage", () => {})
 describe("SimpleStorage", function () {
-  // let simpleStorageFactory
-  // let simpleStorage
+  // Factory und Storage-Objekt sind ausserhalb beforeEach
+  // weil andere Funktionen auch damit interagieren
   let simpleStorageFactory, simpleStorage
+
+  // Bevor jedem Test wird diese Methode aufgerufen
   beforeEach(async function () {
     simpleStorageFactory = await ethers.getContractFactory("SimpleStorage")
     simpleStorage = await simpleStorageFactory.deploy()
   })
 
+  // Hier beschreiben wir, was der Test machen soll
   it("Should start with a favorite number of 0", async function () {
     const currentValue = await simpleStorage.retrieve()
     const expectedValue = "0"
-    // assert
-    // expect
+
     assert.equal(currentValue.toString(), expectedValue)
-    // expect(currentValue.toString()).to.equal(expectedValue)
   })
   it("Should update when we call store", async function () {
     const expectedValue = "7"
